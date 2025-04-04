@@ -1,0 +1,10 @@
+#!url=https://raw.githubusercontent.com/Timeyangzai/crack/main/modules/XingJi.module
+#!name=XingJi
+#!description=XingJi 订阅解锁
+
+# https://api.ptexj.com/api/v1/users/authed/userinfo?acc_type=wechat&api_type=e1&client=dLWghTRe3w&device_id=1DC3D4F6B-E58D-412E-8A3C-D5DF275924CA&device_type=ios-10.3.1-iPhone15%2C3-16.5.1&first_visit_time=1743518993&locale=zh-CN&s=ix&timezone=Asia/Shanghai&token=SQ9jJtyZH7v47sxmUsCnzh6Xn3h17CtTrEtW6Byp&user_detail=oe4C_0taJgVs-5bD-Z-NvIqYCO5c
+[Script]
+XingJi=type=http-response,pattern=^https?:\/\/api\.ptexj\.com\/api\/v1\/users\/authed\/userinfo(\?.*)?,requires-body=1,script-path=https://raw.githubusercontent.com/Timeyangzai/crack/main/js/XingJi.js
+
+[MITM]
+hostname = %APPEND% api.ptexj.com
