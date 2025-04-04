@@ -1,9 +1,10 @@
 /*
+#!url=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/modules/Notability.module
 #!name=Notability
 #!description=Notability 订阅解锁
 
 [Script]
-notability = type=http-response,pattern=^https?:\/\/notability\.com\/(global|subscriptions),script-path=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/Notability.js, requires-body=true,max-size=-1,timeout=60
+notability = type=http-response,pattern=^https?:\/\/notability\.com\/(global|subscriptions),script-path=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/js/Notability.js, requires-body=true,max-size=-1,timeout=60
 
 [MITM]
 hostname = %APPEND% notability.com
