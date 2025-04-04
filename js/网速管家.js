@@ -1,10 +1,10 @@
 /*
-#!url=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/modules/网速管家.module
+#!url=https://raw.githubusercontent.com/Timeyangzai/crack/main/modules/网速管家.module
 #!name=网速管家
 #!description=网速管家 订阅解锁
 
 [Script]
-网速管家=type=http-response,pattern=^https:\/\/api-v3\.speedtest\.cn\/user\/info,requires-body=1,script-path=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/js/网速管家.js
+网速管家=type=http-response,pattern=^https:\/\/api-v3\.speedtest\.cn\/user\/info,requires-body=1,script-path=https://raw.githubusercontent.com/Timeyangzai/crack/main/js/网速管家.js
 
 [MITM]
 hostname = %APPEND% api-v3.speedtest.cn

@@ -1,9 +1,9 @@
-#!url=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/modules/Notability.module
+#!url=https://raw.githubusercontent.com/Timeyangzai/crack/main/modules/Notability.module
 #!name=Notability
 #!description=Notability 订阅解锁
 
 [rewrite_local]
-^https?:\/\/notability\.com\/(global|subscriptions) url script-response-body https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/js/Notability.js
+^https?:\/\/notability\.com\/(global|subscriptions) url script-response-body https://raw.githubusercontent.com/Timeyangzai/crack/main/js/Notability.js
 
 [mitm]
 hostname = notability.com
