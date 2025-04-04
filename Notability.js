@@ -1,15 +1,14 @@
-/*************************************
-项目名称：Notability
-使用声明：⚠️仅供参考，🈲转载与售卖！
-**************************************
+/*
+#!name=Notability
+#!description=Notability 订阅解锁
 
-[rewrite_local]
-^https?:\/\/notability\.com\/(global|subscriptions) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/notability.js
+[Script]
+notability = type=http-response,pattern=^https?:\/\/notability\.com\/(global|subscriptions),script-path=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/Notability.js, requires-body=true,max-size=-1,timeout=60
 
-[mitm]
-hostname = notability.com
+[MITM]
+hostname = %APPEND% notability.com
 
-*************************************/
+*/
 
 var myang_notability = JSON.parse($response.body);
 
