@@ -1,5 +1,5 @@
 /*
-#!url=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/modules/Notability.conf
+#!url=https://raw.githubusercontent.com/Timeyangzai/crack/refs/heads/main/modules/Notability.module
 #!name=Notability
 #!description=Notability 订阅解锁
 
