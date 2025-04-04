@@ -3,11 +3,11 @@
 #!name=Notability
 #!description=Notability 订阅解锁
 
-[rewrite_local]
-^https?:\/\/notability\.com\/(global|subscriptions) url script-response-body https://raw.githubusercontent.com/Timeyangzai/crack/main/js/Notability.js
+[Script]
+Notability=type=http-response,pattern=^https?:\/\/notability\.com\/(global|subscriptions),requires-body=1,script-path=https://raw.githubusercontent.com/Timeyangzai/crack/main/js/Notability.js
 
-[mitm]
-hostname = notability.com
+[MITM]
+hostname = %APPEND% notability.com
 */
 
 var myang_notability = JSON.parse($response.body);
