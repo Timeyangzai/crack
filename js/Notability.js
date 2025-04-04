@@ -12,30 +12,29 @@ hostname = %APPEND% notability.com
 */
 
 var myang_notability = JSON.parse($response.body);
-
 myang_notability = {
   data: {
     processAppleReceipt: {
+      __typename: "SubscriptionResult",
       error: 0,
       subscription: {
+        __typename: "AppStoreSubscription",
+        status: "canceled",
+        originalPurchaseDate: "2024-12-06T18:01:39.000Z",
+        originalTransactionId: "180002386574666",
+        expirationDate: "2099-09-09T09:09:09.000Z",
         productId: "com.gingerlabs.Notability.premium_subscription",
-        originalTransactionId: "570001184068302",
         tier: "premium",
         refundedDate: null,
         refundedReason: null,
         isInBillingRetryPeriod: false,
-        expirationDate: "2099-09-09T09:09:09.000Z",
         gracePeriodExpiresAt: null,
+        expirationIntent: "CUSTOMER_CANCELLED",
         overDeviceLimit: false,
-        expirationIntent: null,
-        __typename: "AppStoreSubscription",
         user: null,
-        status: "canceled",
-        originalPurchaseDate: "2022-09-09T09:09:09.000Z",
       },
-      __typename: "SubscriptionResult",
+      isClassic: false,
     },
   },
 };
-
 $done({ body: JSON.stringify(myang_notability) });
